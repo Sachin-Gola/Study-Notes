@@ -1,0 +1,82 @@
+>> a=4
+
+a =
+
+     4
+
+>> a=[5,4]
+
+a =
+
+     5     4
+
+>> a=[5,4,6]
+
+a =
+
+     5     4     6
+
+>> a=[5,4,6 ; 4,6,8; 3,7,1]
+
+a =
+
+     5     4     6
+     4     6     8
+     3     7     1
+
+>> a(3,2)
+
+ans =
+
+     7
+
+>> a(1,2)
+
+ans =
+
+     4
+
+>> a(1,2)=20
+
+a =
+
+     5    20     6
+     4     6     8
+     3     7     1
+
+>> a(:,1)
+
+ans =
+
+     5
+     4
+     3
+
+>> a(1,:)
+
+ans =
+
+     5    20     6
+
+>> a(:,-1)
+Index in position 2 is invalid. Array indices must be positive integers or logical values.
+ 
+>> a(2:3,3:4)
+Index in position 2 exceeds array bounds. Index must not exceed 3.
+ 
+>> a(2:3,2:3)
+
+ans =
+
+     6     8
+     7     1
+
+>> a(2:3,2:3)=[1,2;4,5]
+
+a =
+
+     5    20     6
+     4     1     2
+     3     4     5
+
+>> 
